@@ -1,0 +1,22 @@
+<html>
+
+    <script>
+
+        let number = window.prompt("Enter number: ");
+        let denominator, numerator;
+
+        for(let i = 1; i <= number; i++) {
+            if(i == 1) {
+                denominator = 1;
+                numerator = 1;
+            } else {
+                numerator = i * numerator + denominator;
+                denominator = denominator * i;
+            }
+        }
+
+        alert("H(" + number + ") = " + numerator + "/" + denominator)
+
+    </script>
+
+</html>
