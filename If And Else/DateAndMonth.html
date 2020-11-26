@@ -1,0 +1,22 @@
+<html>
+
+    <script>
+
+        let month = window.prompt("Enter month: ");
+        let day = window.prompt("Enter day: ");
+
+        let result;
+        
+        if((day > 1) && (day < 31)) {
+            if(((month == 3) && (day >= 20)) || ((month == 4) && (day <= 30)) || (month == 5) || ((month == 6) && (day <= 20))) {
+                alert("true");
+            } else {
+                alert("false");
+            }
+        } else {
+            alert("Invalid date");
+        }
+
+    </script>
+
+</html>
