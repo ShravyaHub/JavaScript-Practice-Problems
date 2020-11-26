@@ -1,0 +1,27 @@
+<html>
+
+    <script>
+
+        let start = window.prompt("Enter first number of range: ");
+        let end  = window.prompt("Enter last number of range: ");
+        let primeNumbers = "";
+        for(let number = start; number <= end; number++) {
+            let count = 0;
+            if(number < 2) {
+                count = 1;
+            }
+            for(let i = 2; i < number; i++) {
+                if(number % i == 0) {
+                    count = 1;
+                }
+            }
+            if(count == 0) {
+                primeNumbers += "   " + number;
+            } 
+        }
+
+        alert("Prime numbers from " + start + " to " + end + " are: " + primeNumbers);
+
+    </script>
+
+</html>
