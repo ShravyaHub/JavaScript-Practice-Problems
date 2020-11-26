@@ -1,0 +1,40 @@
+<html>
+
+    <script>
+
+        let number1 = parseInt(window.prompt("Enter first number: "));
+        let number2 = parseInt(window.prompt("Enter second number: "));
+        let number3 = parseInt(window.prompt("Enter third number: "));
+
+        let operation1 = number1 + number2 * number3;
+        let operation2 = number1 % number2 + number3;
+        let operation3 = number3 + number1 / number2;
+        let operation4 = number1 * number2 + number3;
+
+        let minimum, maximum;
+        
+        if(operation1 >= operation2) {
+            minimum = operation2;
+            maximum = operation1;
+        } else {
+            minimum = operation1;
+            maximum = operation2;
+        }
+
+        if(minimum >= operation3) {
+            minimum = operation3;
+        } else if(maximum <= operation3) {
+            maximum = operation3;
+        }
+
+        if(minimum >= operation4) {
+            minimum = operation4;
+        } else if(maximum <= operation4) {
+            maximum = operation4;
+        }
+
+        alert("Minimium = " + minimum + ", maximum = " + maximum);
+
+    </script>
+
+</html>
