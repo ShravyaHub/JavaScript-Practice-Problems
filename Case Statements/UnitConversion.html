@@ -1,0 +1,38 @@
+<html>
+
+    <script>
+
+        let number = window.prompt("Enter number: ");
+        let conversion = parseInt(window.prompt(
+        "1. Feet to Inch\n" + 
+        "2. Feet to Meter\n" +
+        "3. Inch tgo Feet\n" +
+        "4. Meter to Feet"
+        ));
+
+        let result;
+
+        switch(conversion) {
+            case 1:
+                result = number * 12;
+                alert(number + "ft = " + result + "in");
+                break;
+            case 2:
+                result = number / 3;
+                alert(number + "ft = " + result + "m");
+                break;
+            case 3:
+                result = number / 12;
+                alert(number + "in = " + result + "ft");
+                break;
+            case 4:
+                result = number * 3;
+                alert(number + "m = " + result + "ft");
+                break;
+            default:
+                alert("'Invalid input");
+        }
+
+    </script>
+
+</html>
