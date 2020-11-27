@@ -1,0 +1,27 @@
+<html>
+
+    <script>
+
+        function checkPalindrome(userNumber) {
+            let temp  = userNumber;
+            let number = userNumber;
+            let sum = 0;
+            let remainder = 0;
+            while(number > 0) {
+                remainder = parseInt(number % 10);
+                sum = parseInt(sum * 10 + remainder);
+                number = parseInt(number / 10);
+            }
+            if(sum == userNumber) {
+                alert(userNumber + " is a palindrome")
+            } else {
+                alert(userNumber + " is not palindome");
+            }
+        }
+
+        let userNumber = window.prompt("Enter a number: ");
+        checkPalindrome(userNumber);
+
+    </script>
+
+</html>
