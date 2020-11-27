@@ -1,0 +1,36 @@
+<html>
+
+    <script>
+
+        let number = window.prompt("Think of a number between 1 and 100: ");
+        let start = 1;
+        let end = 100;
+        let guess = 0;
+        while(guess != number) {
+            let range = [];
+            for(let index = start; index <= end; index++) {
+                range.push(parseInt(index));
+            }
+            guess = (range[parseInt(range.length / 2)]);
+            if(guess == number) {
+                break;
+            }
+            let choice = window.prompt("Is the number greater than " + guess);
+            switch(choice) {
+                case "yes":
+                    start = guess;
+                    break;
+                case "no":
+                    end = guess;
+                    break;
+                default:
+                    alert("Enter yes or no");
+            }
+            
+        }
+
+        alert("Number is = " + number);
+
+    </script>
+
+</html>
