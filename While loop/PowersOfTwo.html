@@ -1,0 +1,22 @@
+<html>
+
+    <script>
+
+        let power = window.prompt("Enter power: ");
+        let result = 1;
+        let n = 1;
+        
+        while(result < 256) {
+            if(n <= power) {
+                result = result * 2;
+            } else {
+                break;
+            }
+            n++;
+        }
+
+        alert("Result = " + result);
+
+    </script>
+
+</html>
